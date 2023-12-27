@@ -1,0 +1,30 @@
+{% include "base.html" %}
+
+{% include "header.html" %}
+
+    <div class=" container bd-example col-md-8 mt-5 mb-5">
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Date</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Expected Price</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for data in datas %}
+            <tr>
+              <th scope="row">{{ data.id }}</th>
+              <td>{{ data.date_time }}</td>
+              <td>{{ data.product_name }}</td>
+              <td>{{ data.price }}</td>
+              <td>{{ data.expected_price }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+      </table>
+    </div>
+
+{% include "footer.html" %}
