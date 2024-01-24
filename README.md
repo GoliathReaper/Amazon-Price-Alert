@@ -9,6 +9,7 @@ Amazon Price Alert is a web application developed using Python Flask that notifi
 
 ## Technologies Used
 * **Python Flask:** Backend development framework.
+* * **Flask SQLAlchemy:** For data storage.
 * **HTML/CSS:** Frontend design and structure.
 * **Docker:** Containerization for easy deployment.
 
